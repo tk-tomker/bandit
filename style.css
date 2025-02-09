@@ -187,7 +187,7 @@ header .navbar{
 
 
 .hero-section .hero-image-wrapper{
-    max-width: 500px;
+    max-width: 100%;
     margin-right: 30px;
 }
 
@@ -247,6 +247,12 @@ header .navbar{
 
 .about-section .social-link-list .social-link:hover{
     color: var(--secondary-color)
+}
+
+#productcopy{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .menu-section{
