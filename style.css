@@ -10,10 +10,10 @@
 :root{
     --white-color: #fff;
     --dark-color: #252525;
-    --primary-color: #232529;
-    --secondary-color: #f3961c;
+    --primary-color: #2f2e33;
+    --secondary-color: #fe6504;
     --light-pink-color: #faf4f5;
-    --medium-gray-color: #ccc;
+    --medium-gray-color: #fe6504;
 
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
