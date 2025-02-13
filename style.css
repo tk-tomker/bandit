@@ -325,7 +325,9 @@ header .navbar{
 .contact-section{
     padding: 50px 0 100px;
     background: var(--light-pink-color);
+    align-self: center;
 }
+
 
 .contact-section .section-content{
     display: flex;
@@ -366,26 +368,14 @@ header .navbar{
     resize: vertical;
 }
 
-.contact-section .contact-form .submit-button{
-    background: var(--primary-color);
-    margin-top: 10px;
-    padding: 10px 26px;
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-m);
-    color: var(--white-color);
-    border-radius: var(--border-radius-m);
-    border: 1px solid var(--primary-color);
-    transition: ease 0.3s;
-}
+
 
 .contact-section .contact-form .submit-button:hover{
     background: transparent;
     color: var(--primary-color)
 }
 
-.contact-section .contact-form{
-    max-width: 50%;
-}
+
 
 
 .footer-section{
