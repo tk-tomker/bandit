@@ -14,16 +14,16 @@
 
 </head>
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
         <nav class="navbar section-content">
-            <a href="#" class="nav-logo">
+            <a href="#myPage" class="nav-logo">
                 <h2 class="logo-text">BandIt ⌚</h2>
             </a>
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#myPage" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About Us</a>
@@ -40,6 +40,27 @@
             <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event){
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $("html, body").animate({
+                    scrollTop: $(hash).offset().top
+                }, 700, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
 
     <main>
         <section class="hero-section" id="hero">
